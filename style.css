@@ -1,0 +1,174 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Improved font */
+}
+
+/* Basic styles for header and navigation */
+header {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Centered text styles */
+.center-text h1 {
+    margin: 0;
+    font-size: 32px; /* Larger font size */
+    color: #333; /* Darker text color */
+    margin-top: 20px; /* Spacing from navigation */
+}
+
+/* Improved dropdown styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Main content area */
+.main {
+    padding: 20px;
+}
+
+.image-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; /* Added some space at the bottom */
+}
+
+
+/* Styles for dynamic text */
+.dynamic-text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#changing-text {
+    font-size: 24px;
+    color: #333;
+    margin: 1rem;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Animation for the image */
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up to 1.1 */
+    }
+    100% {
+        transform: scale(1); /* Back to original scale */
+    }
+}
+
+#animated-image {
+    animation: scaleAnimation 5s ease-in-out infinite; /* Apply the animation */
+}
+
+
+.audio-control {
+    position: absolute; /* Position absolute for precise placement */
+    top: 10px; /* Adjust from top */
+    right: 10px; /* Adjust from right */
+    cursor: pointer;
+    color: #d2ac47;
+    font-size: 24px;
+    z-index: 1; /* Ensure it's above other elements */
+  }
+
+
+/* For screens smaller than 768px (typical smartphones) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .center-text h1 {
+        font-size: 28px;
+    }
+}
+
+/* For screens smaller than 480px (smaller smartphones) */
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 80px;
+    }
+
+    .center-text h1 {
+        font-size: 24px;
+    }
+}

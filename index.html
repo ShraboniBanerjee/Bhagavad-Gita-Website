@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavad Gita</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <div class="center-text">
+            <h1>Bhagavad Gita</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Languages</a>
+                <div class="dropdown-content">
+                    <a href="./English-Bhagavad-Gita.pdf">English</a>
+                    <a href="./Hindi-Bhagavad-Gita.pdf">Hindi</a>
+                    <a href="./Bengali-Bhagavad-Gita.pdf">Bengali</a>
+                </div>
+            </li>
+            <li><a href="https://youtu.be/28sptQICKCk?si=uhCSGpZZI-YPjuV7">YouTube</a></li>
+            <li><a href="https://open.spotify.com/album/3rb8VMR0JyU3BtcbXD0SVB">Audiobook</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+  <div class="image-container">
+    <img src="Cover.jpg" alt="Image" id="animated-image">
+</div>
+
+<div class="dynamic-text">
+  <h2 id="changing-text"></h2>
+</div>
+</main>
+
+<footer>
+    <p>&copy; 2023 SB Bhagavad Gita. All rights reserved.</p>
+</footer>
+
+<audio id="bg-music" autoplay loop>
+  <source src="Bhagavad-Gita-Music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="audio-control" onclick="toggleAudio()">
+  <i id="audio-icon" class="fa fa-play"></i>
+</div>
+
+</body>
+</html>
